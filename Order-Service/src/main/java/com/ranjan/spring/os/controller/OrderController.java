@@ -25,7 +25,7 @@ public class OrderController {
 		return orderService.saveOrder(request);
 		
 		
-		//do a rest call to Payment-Service for doing payment and pass the order id
+		
 	}
 
 }
