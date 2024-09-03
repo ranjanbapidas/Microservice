@@ -6,4 +6,6 @@ import com.ranjan.spring.ps.entity.Payment;
 
 public interface PaymentRepository extends JpaRepository<Payment, Integer> {
 
+	Payment findByOrderId(int orderId);
+
 }

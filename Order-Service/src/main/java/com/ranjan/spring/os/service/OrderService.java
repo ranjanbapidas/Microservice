@@ -1,5 +1,7 @@
 package com.ranjan.spring.os.service;
 
+import java.util.UUID;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -10,7 +12,14 @@ import com.ranjan.spring.os.entity.common.TransactionRequest;
 import com.ranjan.spring.os.entity.common.TransactionResponse;
 import com.ranjan.spring.os.repository.OrderRepository;
 
+import io.github.resilience4j.bulkhead.annotation.Bulkhead;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
+import io.github.resilience4j.timelimiter.annotation.TimeLimiter;
+
 @Service
+
 public class OrderService {
 	
 	@Autowired
@@ -19,6 +28,13 @@ public class OrderService {
 	@Autowired
 	private RestTemplate template;
 	
+	private static final String ORDER_TO_PAYMENT = "OrderToPayment";
+	
+	//@CircuitBreaker(name = ORDER_TO_PAYMENT, fallbackMethod = "getPaymentDetailsFallback")
+	@Retry(name = ORDER_TO_PAYMENT, fallbackMethod = "getPaymentDetailsFallback")
+	@RateLimiter(name = ORDER_TO_PAYMENT)
+	@Bulkhead(name = ORDER_TO_PAYMENT)
+	//@TimeLimiter(name = ORDER_TO_PAYMENT)
 	public TransactionResponse saveOrder(TransactionRequest request) {
 		
 		String response="";
@@ -36,6 +52,16 @@ public class OrderService {
 		
 		repository.save(order);
 		return new TransactionResponse(order,paymentResponse.getAmount(),paymentResponse.getTransactionID(),response);
+	}
+	
+	public TransactionResponse getPaymentDetailsFallback(Exception e) {
+		TransactionResponse tr= new TransactionResponse();
+		tr.setOrder(new Order());
+		tr.setAmount(0.0);
+		tr.setTransactionId("");
+		tr.setMessage("Order Failed");
+		return tr;
+	
 	}
 
 }

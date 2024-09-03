@@ -18,3 +18,54 @@ eureka:
       defaultZone: http://localhost:8761/eureka
   instance:
     hostname: localhost
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+  health:
+    circuitbreakers:
+      enabled: true
+
+ 
+resilience4j:
+  circuitbreaker:
+    instances:
+      OrderToPayment: 
+        register-health-indicator: true
+        event-consumer-buffer-size: 10
+        failure-rate-threshold: 50
+        minimum-number-of-calls: 5
+        automatic-transition-from-open-to-half-open-enabled: true
+        wait-duration-in-open-state: 5s
+        permitted-number-of-calls-in-half-open-state: 3
+        sliding-window-size: 10
+        sliding-window-type: count-based
+        
+  retry:
+    instances:
+      OrderToPayment:
+        max-attempts: 3
+        wait-duration: 500ms
+       
+  ratelimiter:
+    instances:
+      OrderToPayment:
+        limit-for-period: 10
+       
+  bulkhead:
+    instances:
+      OrderToPayment:
+        max-concurrent-calls: 5
+        
+  timelimiter:
+    instances:
+      OrderToPayment:
+        timeout-duration: 2s
+        
+  
+        
