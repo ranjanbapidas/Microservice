@@ -1,0 +1,240 @@
+2024-09-11T01:12:35.723+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] c.r.spring.os.OrderServiceApplication    : Starting OrderServiceApplication using Java 17.0.12 with PID 13028 (D:\Education\java\Spring\Workspace\SW1\Microservice\Order-Service\target\classes started by Ranjan in D:\Education\java\Spring\Workspace\SW1\Microservice\Order-Service)
+2024-09-11T01:12:35.723+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] c.r.spring.os.OrderServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-09-11T01:12:35.724+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9196
+2024-09-11T01:12:35.726+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ORDER-SERVICE, profiles=[default], label=null, version=b3143fb6a098a7cb0aed19e058bc3b60b8b8f8bb, state=null
+2024-09-11T01:12:36.037+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-11T01:12:36.043+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-09-11T01:12:36.123+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4f55c1df-07be-3d36-a856-4b09fff02b86
+2024-09-11T01:12:36.175+05:30  WARN 13028 --- [ORDER-SERVICE] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-11T01:12:36.177+05:30  WARN 13028 --- [ORDER-SERVICE] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-11T01:12:36.339+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9192 (http)
+2024-09-11T01:12:36.340+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-11T01:12:36.340+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-11T01:12:36.374+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-11T01:12:36.374+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 648 ms
+2024-09-11T01:12:36.509+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-09-11T01:12:36.511+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:ranjan user=SA
+2024-09-11T01:12:36.511+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-09-11T01:12:36.511+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ranjan'
+2024-09-11T01:12:36.638+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-11T01:12:36.640+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-11T01:12:36.647+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-11T01:12:36.672+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-11T01:12:36.673+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11T01:12:36.768+05:30  WARN 13028 --- [ORDER-SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-11T01:12:38.530+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-09-11T01:12:39.128+05:30  WARN 13028 --- [ORDER-SERVICE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-09-11T01:12:40.273+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-09-11T01:12:40.303+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-09-11T01:12:40.384+05:30  WARN 13028 --- [ORDER-SERVICE] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-11T01:12:40.397+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 26 endpoints beneath base path '/actuator'
+2024-09-11T01:12:40.445+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-09-11T01:12:40.449+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-09-11T01:12:40.449+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-11T01:12:40.449+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-09-11T01:12:40.449+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-09-11T01:12:40.449+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-09-11T01:12:40.449+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-09-11T01:12:40.449+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-09-11T01:12:40.449+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-09-11T01:12:40.450+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-09-11T01:12:40.476+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-09-11T01:12:40.477+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-09-11T01:12:40.477+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-09-11T01:12:40.478+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1725997360478 with initial instances count: 4
+2024-09-11T01:12:40.489+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2024-09-11T01:12:40.489+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1725997360489, current=UP, previous=STARTING]
+2024-09-11T01:12:40.490+05:30  INFO 13028 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192: registering service...
+2024-09-11T01:12:40.497+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9192 (http) with context path '/'
+2024-09-11T01:12:40.498+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9192
+2024-09-11T01:12:40.498+05:30  INFO 13028 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192 - registration status: 204
+2024-09-11T01:12:41.631+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-09-11T01:12:41.691+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] c.r.spring.os.OrderServiceApplication    : Started OrderServiceApplication in 8.13 seconds (process running for 2259.737)
+2024-09-11T01:12:41.697+05:30  INFO 13028 --- [ORDER-SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name microservice.log (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-09-11T01:12:42.036+05:30  INFO 13028 --- [ORDER-SERVICE] [RMI TCP Connection(69)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-11T01:12:42.037+05:30  INFO 13028 --- [ORDER-SERVICE] [RMI TCP Connection(69)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-SERVICE with eureka with status DOWN
+2024-09-11T01:12:42.037+05:30  INFO 13028 --- [ORDER-SERVICE] [RMI TCP Connection(69)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1725997362037, current=DOWN, previous=UP]
+2024-09-11T01:12:42.037+05:30  INFO 13028 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192: registering service...
+2024-09-11T01:12:42.041+05:30  INFO 13028 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192 - registration status: 204
+2024-09-11T01:12:42.107+05:30  INFO 13028 --- [ORDER-SERVICE] [RMI TCP Connection(69)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11T01:12:42.109+05:30  WARN 13028 --- [ORDER-SERVICE] [RMI TCP Connection(69)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-11T01:12:42.109+05:30  INFO 13028 --- [ORDER-SERVICE] [RMI TCP Connection(69)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-09-11T01:12:42.110+05:30  INFO 13028 --- [ORDER-SERVICE] [RMI TCP Connection(69)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-09-11T01:12:42.111+05:30  INFO 13028 --- [ORDER-SERVICE] [RMI TCP Connection(69)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-09-11T01:12:45.123+05:30  INFO 13028 --- [ORDER-SERVICE] [RMI TCP Connection(69)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-09-11T01:12:45.140+05:30  INFO 13028 --- [ORDER-SERVICE] [RMI TCP Connection(69)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192 - deregister  status: 200
+2024-09-11T01:12:45.140+05:30  INFO 13028 --- [ORDER-SERVICE] [RMI TCP Connection(69)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-09-11T01:12:51.626+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] c.r.spring.os.OrderServiceApplication    : Starting OrderServiceApplication using Java 17.0.12 with PID 5184 (D:\Education\java\Spring\Workspace\SW1\Microservice\Order-Service\target\classes started by Ranjan in D:\Education\java\Spring\Workspace\SW1\Microservice\Order-Service)
+2024-09-11T01:12:51.628+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] c.r.spring.os.OrderServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-09-11T01:12:51.675+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9196
+2024-09-11T01:12:51.676+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ORDER-SERVICE, profiles=[default], label=null, version=b3143fb6a098a7cb0aed19e058bc3b60b8b8f8bb, state=null
+2024-09-11T01:12:51.677+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-11T01:12:51.678+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-11T01:12:52.698+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-11T01:12:52.861+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 1 JPA repository interface.
+2024-09-11T01:12:53.278+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4f55c1df-07be-3d36-a856-4b09fff02b86
+2024-09-11T01:12:53.640+05:30  WARN 5184 --- [ORDER-SERVICE] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-11T01:12:53.644+05:30  WARN 5184 --- [ORDER-SERVICE] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-11T01:12:54.185+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9192 (http)
+2024-09-11T01:12:54.198+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-11T01:12:54.198+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-11T01:12:54.266+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-11T01:12:54.267+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2589 ms
+2024-09-11T01:12:54.530+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-11T01:12:54.756+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:ranjan user=SA
+2024-09-11T01:12:54.759+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-11T01:12:54.773+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ranjan'
+2024-09-11T01:12:55.095+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-11T01:12:55.155+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-11T01:12:55.191+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-11T01:12:55.513+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-11T01:12:56.655+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-11T01:12:56.711+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11T01:12:56.943+05:30  WARN 5184 --- [ORDER-SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-11T01:12:59.697+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-09-11T01:13:00.826+05:30  WARN 5184 --- [ORDER-SERVICE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-09-11T01:13:02.063+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-09-11T01:13:02.102+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-09-11T01:13:02.219+05:30  WARN 5184 --- [ORDER-SERVICE] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-11T01:13:02.239+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 26 endpoints beneath base path '/actuator'
+2024-09-11T01:13:02.359+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-09-11T01:13:02.398+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-09-11T01:13:02.403+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-11T01:13:02.415+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-09-11T01:13:02.415+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-09-11T01:13:02.415+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-09-11T01:13:02.415+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-09-11T01:13:02.415+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-09-11T01:13:02.415+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-09-11T01:13:02.415+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-09-11T01:13:02.807+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-09-11T01:13:02.809+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-09-11T01:13:02.812+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-09-11T01:13:02.814+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1725997382814 with initial instances count: 2
+2024-09-11T01:13:02.833+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2024-09-11T01:13:02.834+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1725997382834, current=UP, previous=STARTING]
+2024-09-11T01:13:02.836+05:30  INFO 5184 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192: registering service...
+2024-09-11T01:13:02.866+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9192 (http) with context path '/'
+2024-09-11T01:13:02.867+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9192
+2024-09-11T01:13:02.900+05:30  INFO 5184 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192 - registration status: 204
+2024-09-11T01:13:04.067+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-09-11T01:13:04.164+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] c.r.spring.os.OrderServiceApplication    : Started OrderServiceApplication in 15.56 seconds (process running for 16.357)
+2024-09-11T01:13:04.629+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-11T01:13:04.629+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-11T01:13:04.632+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-11T01:14:54.334+05:30  INFO 5184 --- [ORDER-SERVICE] [http-nio-9192-exec-1] c.ranjan.spring.os.service.OrderService  : OrderService request: {"order":{"id":102,"name":"Ear Phone","qty":5,"price":4000.0},"payment":{"paymentId":0,"paymentStatus":null,"transactionID":null,"orderId":102,"amount":4000.0}} 
+2024-09-11T01:14:54.733+05:30  INFO 5184 --- [ORDER-SERVICE] [http-nio-9192-exec-1] c.ranjan.spring.os.service.OrderService  : PaymentService Response From OrderService Rest Call: {"paymentId":1,"paymentStatus":"Failed","transactionID":"f5f965f0-fc97-4cad-9ad6-a983dc96efb9","orderId":102,"amount":4000.0} 
+2024-09-11T01:15:30.945+05:30  INFO 5184 --- [ORDER-SERVICE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-11T01:15:30.947+05:30  INFO 5184 --- [ORDER-SERVICE] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-SERVICE with eureka with status DOWN
+2024-09-11T01:15:30.947+05:30  INFO 5184 --- [ORDER-SERVICE] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1725997530947, current=DOWN, previous=UP]
+2024-09-11T01:15:30.948+05:30  INFO 5184 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192: registering service...
+2024-09-11T01:15:30.957+05:30  INFO 5184 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192 - registration status: 204
+2024-09-11T01:15:31.020+05:30  INFO 5184 --- [ORDER-SERVICE] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11T01:15:31.027+05:30  WARN 5184 --- [ORDER-SERVICE] [Thread-1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-11T01:15:31.028+05:30  INFO 5184 --- [ORDER-SERVICE] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-11T01:15:31.031+05:30  INFO 5184 --- [ORDER-SERVICE] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-11T01:15:31.032+05:30  INFO 5184 --- [ORDER-SERVICE] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-09-11T01:15:34.040+05:30  INFO 5184 --- [ORDER-SERVICE] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-09-11T01:15:34.040+05:30  WARN 5184 --- [ORDER-SERVICE] [DiscoveryClient-%d] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2024-09-11T01:15:34.044+05:30  INFO 5184 --- [ORDER-SERVICE] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192 - deregister  status: 200
+2024-09-11T01:15:34.045+05:30  INFO 5184 --- [ORDER-SERVICE] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2024-09-11T01:15:36.162+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] c.r.spring.os.OrderServiceApplication    : Starting OrderServiceApplication using Java 17.0.12 with PID 5184 (D:\Education\java\Spring\Workspace\SW1\Microservice\Order-Service\target\classes started by Ranjan in D:\Education\java\Spring\Workspace\SW1\Microservice\Order-Service)
+2024-09-11T01:15:36.162+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] c.r.spring.os.OrderServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-09-11T01:15:36.164+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9196
+2024-09-11T01:15:36.164+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ORDER-SERVICE, profiles=[default], label=null, version=b3143fb6a098a7cb0aed19e058bc3b60b8b8f8bb, state=null
+2024-09-11T01:15:36.502+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-11T01:15:36.508+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-09-11T01:15:36.600+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4f55c1df-07be-3d36-a856-4b09fff02b86
+2024-09-11T01:15:36.660+05:30  WARN 5184 --- [ORDER-SERVICE] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2024-09-11T01:15:36.662+05:30  WARN 5184 --- [ORDER-SERVICE] [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2024-09-11T01:15:36.817+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9192 (http)
+2024-09-11T01:15:36.819+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-11T01:15:36.819+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-11T01:15:36.854+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-11T01:15:36.855+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 690 ms
+2024-09-11T01:15:36.993+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-09-11T01:15:36.995+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:ranjan user=SA
+2024-09-11T01:15:36.996+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-09-11T01:15:36.996+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ranjan'
+2024-09-11T01:15:37.125+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-11T01:15:37.129+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-11T01:15:37.140+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-11T01:15:37.177+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-11T01:15:37.179+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11T01:15:37.285+05:30  WARN 5184 --- [ORDER-SERVICE] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-11T01:15:39.109+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-09-11T01:15:39.736+05:30  WARN 5184 --- [ORDER-SERVICE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-09-11T01:15:40.891+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-09-11T01:15:40.937+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2024-09-11T01:15:41.013+05:30  WARN 5184 --- [ORDER-SERVICE] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2024-09-11T01:15:41.026+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 26 endpoints beneath base path '/actuator'
+2024-09-11T01:15:41.093+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2024-09-11T01:15:41.097+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2024-09-11T01:15:41.098+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2024-09-11T01:15:41.098+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2024-09-11T01:15:41.098+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2024-09-11T01:15:41.098+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2024-09-11T01:15:41.098+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2024-09-11T01:15:41.098+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2024-09-11T01:15:41.098+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2024-09-11T01:15:41.098+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2024-09-11T01:15:41.139+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2024-09-11T01:15:41.139+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2024-09-11T01:15:41.139+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2024-09-11T01:15:41.140+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1725997541140 with initial instances count: 4
+2024-09-11T01:15:41.153+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2024-09-11T01:15:41.154+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1725997541154, current=UP, previous=STARTING]
+2024-09-11T01:15:41.154+05:30  INFO 5184 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192: registering service...
+2024-09-11T01:15:41.157+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9192 (http) with context path '/'
+2024-09-11T01:15:41.158+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9192
+2024-09-11T01:15:41.166+05:30  INFO 5184 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192 - registration status: 204
+2024-09-11T01:15:42.285+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2024-09-11T01:15:42.341+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] c.r.spring.os.OrderServiceApplication    : Started OrderServiceApplication in 8.221 seconds (process running for 174.533)
+2024-09-11T01:15:42.344+05:30  INFO 5184 --- [ORDER-SERVICE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-11T01:16:01.464+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-11T01:16:01.465+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(16)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDER-SERVICE with eureka with status DOWN
+2024-09-11T01:16:01.466+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1725997561466, current=DOWN, previous=UP]
+2024-09-11T01:16:01.466+05:30  INFO 5184 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192: registering service...
+2024-09-11T01:16:01.481+05:30  INFO 5184 --- [ORDER-SERVICE] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192 - registration status: 204
+2024-09-11T01:16:01.529+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-11T01:16:01.531+05:30  WARN 5184 --- [ORDER-SERVICE] [RMI TCP Connection(16)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-11T01:16:01.531+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-09-11T01:16:01.532+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-09-11T01:16:01.533+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2024-09-11T01:16:04.545+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2024-09-11T01:16:04.562+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/localhost:ORDER-SERVICE:9192 - deregister  status: 200
+2024-09-11T01:16:04.562+05:30  INFO 5184 --- [ORDER-SERVICE] [RMI TCP Connection(16)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

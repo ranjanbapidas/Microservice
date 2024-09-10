@@ -13,7 +13,10 @@ spring:
   config:
     import: configserver:http://localhost:9196
       
-    
+logging:
+  file:
+    name: microservice.log
+    path: C:\Users\ASUS\Desktop\log\   
 
 #eureka:
 #  client:

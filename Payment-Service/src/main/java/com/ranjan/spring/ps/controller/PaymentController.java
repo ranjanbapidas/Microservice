@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.ranjan.spring.ps.entity.Payment;
 import com.ranjan.spring.ps.service.PaymentService;
 
@@ -21,12 +22,12 @@ public class PaymentController {
 	private PaymentService service;
 	
 	@PostMapping("/doPayment")
-	public Payment doPayment(@RequestBody Payment payment) {
+	public Payment doPayment(@RequestBody Payment payment) throws JsonProcessingException {
 		return service.doPayment(payment);
 	}
 	
 	@GetMapping("/{orderId}")
-	public Payment findPaymentHistoryByOrderId(@PathVariable int orderId) {
+	public Payment findPaymentHistoryByOrderId(@PathVariable int orderId) throws JsonProcessingException {
 		return service.findPaymentHistoryByOrderId(orderId);
 	}
 	
