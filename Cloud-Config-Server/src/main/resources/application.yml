@@ -9,10 +9,12 @@ spring:
     config:
       server:
         git:
-          uri: 
+          uri: https://github.com/ranjanbapidas/Microservice.git
   
 eureka:
   client:
     service-url:
       defaultZone:  http://localhost:8761/eureka
+      
+
 

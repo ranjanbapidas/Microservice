@@ -3,6 +3,9 @@ package com.ranjan.spring.os.service;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -19,14 +22,18 @@ import io.github.resilience4j.retry.annotation.Retry;
 import io.github.resilience4j.timelimiter.annotation.TimeLimiter;
 
 @Service
-
+@RefreshScope
 public class OrderService {
 	
 	@Autowired
 	private OrderRepository repository;
 	
 	@Autowired
+	@Lazy
 	private RestTemplate template;
+	
+	@Value("${microservice.payment-service.endpoints.endpoint.uri}")
+	private String ENDPOINT_URL;
 	
 	private static final String ORDER_TO_PAYMENT = "OrderToPayment";
 	
@@ -46,7 +53,7 @@ public class OrderService {
 		
 		//do a rest call to Payment-Service for doing payment 
 		
-		Payment paymentResponse = template.postForObject("http://PAYMENT-SERVICE/payment/doPayment", payment,Payment.class );
+		Payment paymentResponse = template.postForObject(ENDPOINT_URL, payment,Payment.class );
 		
 		response = paymentResponse.getPaymentStatus().equalsIgnoreCase("Success")?"Payment Processing Successful and Order Placed":"Payment Failed And Order Added to cart";
 		
