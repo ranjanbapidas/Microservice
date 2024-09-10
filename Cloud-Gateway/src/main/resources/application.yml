@@ -23,5 +23,8 @@ spring:
           predicates:
           - Path=/payment/**
 
+  config:
+    import: configserver:http://localhost:9196
+
 server:
   port: 8989

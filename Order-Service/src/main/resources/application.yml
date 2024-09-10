@@ -9,8 +9,10 @@ spring:
     url: jdbc:h2:mem:ranjan
   application:
     name: ORDER-SERVICE
-  
-        
+
+  config:
+    import: configserver:http://localhost:9196
+      
     
 
 #eureka:
