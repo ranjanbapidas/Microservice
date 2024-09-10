@@ -9,7 +9,8 @@ spring:
     url: jdbc:h2:mem:ranjan
   application:
     name: PAYMENT-SERVICE
-
+  config:
+    import: configserver:http://localhost:9196
 #eureka:
 #  client:
 #    register-with-eureka: true
